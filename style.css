@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ecf0f1;
+}
+
+input,
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.container {
+    width: 1500px;
+    max-width: 95%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px -59px 74px rgba(0, 0, 0, 0.5);
+}
+
+header h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: black;
+}
+
+main {
+    margin-top: 40px;
+    padding-bottom: 90px;
+}
+
+main .filters {
+    display: flex;
+    margin: 60px 0;
+    justify-content: space-between;
+}
+
+main .filters .field-search {
+    width: 20%;
+    position: relative;
+}
+
+main .filters .field-search svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+main .field-region {
+    width: 12%;
+}
+
+main .field-region select {
+    padding: 1rem 0.8rem;
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+main .filters .field-search input {
+    width: 100%;
+    padding: 1rem 2.8rem;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+main .filters .field-search input::placeholder {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+main .grid-countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+main .grid-countries .country {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: all 0.6s;
+}
+
+main .grid-countries .country .flag {
+    width: 100%;
+    height: 180px;
+}
+
+main .grid-countries .country .flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .grid-countries .country .info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+}
+
+main .grid-countries .country .info h3 {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+main .grid-countries .country .info ul {
+    margin-top: 15px;
+}
+
+main .grid-countries .country .info ul li {
+    list-style: none;
+    display: block;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 9px;
+}
+
+main .grid-countries .country .info ul li span {
+    font-weight: 400;
+}
+
+main .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .button button {
+    padding: 0.9rem;
+    background: #00b894;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+main .button button:hover {
+    background-color: #1a816d;
+}
