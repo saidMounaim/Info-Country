@@ -183,3 +183,39 @@ main .button button {
 main .button button:hover {
     background-color: #1a816d;
 }
+
+/**
+** RESPONSIVE
+**/
+
+@media screen and (max-width: 1024px) {
+    main .grid-countries {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .grid-countries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .filters {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .filters .field-search {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    main .field-region {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main .grid-countries {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
